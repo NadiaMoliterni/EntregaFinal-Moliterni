@@ -1,0 +1,23 @@
+//nesting / anidacion
+.botonera{
+    ul{
+        background-color: $secondaryColor;
+        li{
+            a{
+                color: $keyColor;
+                text-decoration: underline;
+                font-size: $textMd;
+                font-family: $mainFont;
+                text-align: center;
+                &:hover{
+                    color: blue;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    img{
+        width: 10%;
+    }
+
+}

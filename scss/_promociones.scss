@@ -1,0 +1,39 @@
+#galeria{
+    padding: 0 30px;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 600px);
+    grid-template-areas:
+    "fotoa fotob"
+    "fotoc fotod"
+    "fotoe fotof";
+
+    .foto-a{
+        grid-area: fotoa;
+    }
+    .foto-b{
+        grid-area: fotob;
+    }
+    .foto-c{
+        grid-area: fotoc;
+    }
+    .foto-d{
+        grid-area: fotod;
+    }
+    .foto-e{
+        grid-area: fotoe;
+    }
+    .foto-f{
+        grid-area: fotof;
+    }
+}
+
+.tarjeta{
+    padding: 2rem;
+    img{
+        width: 100%;
+    }
+}

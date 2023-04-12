@@ -1,0 +1,29 @@
+//responsive
+@media (max-width:768px){
+    .productos{
+        width: 100%;
+        padding: 0 30px;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        align-items: center;
+        grid-template-areas:
+        "one"
+        "two"
+        "three";
+    }
+    
+}
+
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+
+.three{
+    grid-area: three;
+}

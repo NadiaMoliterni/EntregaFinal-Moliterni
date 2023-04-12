@@ -1,0 +1,135 @@
+/* selector universal */
+*{font-family: 'Playfair Display', serif;
+    /* box sizing */
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+h1,h2,h3,h4,h5{
+    color: $mainColor;
+    font-family: $mainFont;
+    font-weight: $textBold;
+    text-align: center;
+}
+
+h1{
+    font-size: $textLg;
+}   
+
+h2{
+    font-size: $textMd;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+h4,h5{
+    font-size: 2rem;
+}
+
+
+p{
+    @include textos (1.8rem, 2rem, $keyColor, center)
+    
+}
+
+label{
+    color: $mainColor;
+    font-family: $mainFont;
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+header img{
+    width: 100%;
+}
+
+main img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+iframe{
+    height: 30%;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    background-color: rgb(192, 189, 189);
+    img{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    a{
+        text-decoration: none;
+        display: block;
+        color: $keyColor;
+        font-size: 1rem;
+    }
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.bg-violet{
+    background-color: rgb(242, 196, 222, 0.5);
+}
+
+.linkMore{
+    color: $mainColor;
+    font-size: 2rem;
+    text-decoration: line;
+    text-align: center;
+}
+
+.contenedor{
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px 50px;
+    text-align: center;
+    overflow: auto;
+}
+
+.favicon{
+    width: 40px;
+    height: 40px;
+}
+
+#newsletter{
+    text-align: center;
+}
+
+.flex-direction{
+    flex-direction: row;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex-direction{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.d-block{
+    display: block;
+}

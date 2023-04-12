@@ -1,0 +1,32 @@
+//extends (para extender una clase)
+.btn-pink{
+    background-color: $mainColor;
+    color: white;
+    width: 100%;
+}
+
+.productos figure button{
+    @extend .btn-pink;
+    border: solid;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+//mixins(acciones que se repiten, las defino con variables)
+@mixin textos ($size, $line, $color, $align){
+    font-size: $size; //variables local
+    line-height: $line; //var local
+    color: $color; //var local 
+    font-family: $mainFont; //var global
+    align-items: $align;
+}
+
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
