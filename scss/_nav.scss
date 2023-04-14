@@ -1,12 +1,12 @@
 //nesting / anidacion
 .botonera{
+    background-color: $mainColor;
     ul{
-        background-color: $secondaryColor;
         li{
             a{
                 color: $keyColor;
                 text-decoration: underline;
-                font-size: $textMd;
+                font-size: $textSm;
                 font-family: $mainFont;
                 text-align: center;
                 &:hover{

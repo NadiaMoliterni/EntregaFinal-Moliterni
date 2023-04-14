@@ -31,19 +31,19 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h4, h5 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 p {
@@ -52,6 +52,10 @@ p {
   color: black;
   font-family: "Playfair Display", serif;
   align-items: center;
+}
+
+.card-body {
+  color: #df98b2;
 }
 
 label {
@@ -72,7 +76,7 @@ main img {
 }
 
 iframe {
-  height: 30%;
+  height: 40%;
 }
 
 footer {
@@ -151,13 +155,13 @@ footer a {
   display: block;
 }
 
-.botonera ul {
-  background-color: #f2c4de;
+.botonera {
+  background-color: #df98b2;
 }
 .botonera ul li a {
   color: black;
   text-decoration: underline;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-family: "Playfair Display", serif;
   text-align: center;
 }
@@ -167,30 +171,6 @@ footer a {
 }
 .botonera img {
   width: 10%;
-}
-
-@media (max-width: 768px) {
-  .productos {
-    width: 100%;
-    padding: 0 30px;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    align-items: center;
-    grid-template-areas: "one" "two" "three";
-  }
-}
-.one {
-  grid-area: one;
-}
-
-.two {
-  grid-area: two;
-}
-
-.three {
-  grid-area: three;
 }
 
 .productos {
@@ -208,8 +188,8 @@ footer a {
   margin-bottom: 20px;
 }
 .productos figure p {
-  font-size: 1rem;
-  line-height: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   color: black;
   font-family: "Playfair Display", serif;
   align-items: center;
@@ -282,7 +262,7 @@ footer a {
   background-color: antiquewhite;
 }
 
-#galeria {
+.galeria {
   padding: 0 30px;
   justify-content: space-around;
   justify-items: center;
@@ -292,22 +272,22 @@ footer a {
   grid-template-rows: repeat(2, 600px);
   grid-template-areas: "fotoa fotob" "fotoc fotod" "fotoe fotof";
 }
-#galeria .foto-a {
+.galeria .foto-a {
   grid-area: fotoa;
 }
-#galeria .foto-b {
+.galeria .foto-b {
   grid-area: fotob;
 }
-#galeria .foto-c {
+.galeria .foto-c {
   grid-area: fotoc;
 }
-#galeria .foto-d {
+.galeria .foto-d {
   grid-area: fotod;
 }
-#galeria .foto-e {
+.galeria .foto-e {
   grid-area: fotoe;
 }
-#galeria .foto-f {
+.galeria .foto-f {
   grid-area: fotof;
 }
 
@@ -316,6 +296,56 @@ footer a {
 }
 .tarjeta img {
   width: 100%;
+}
+
+@media (width < 768px) {
+  .productos {
+    overflow-x: hidden;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "one" "two" "three";
+    gap: 10px;
+  }
+  .productos .one {
+    grid-area: one;
+  }
+  .productos .two {
+    grid-area: two;
+  }
+  .productos .three {
+    grid-area: three;
+  }
+  .galeria {
+    width: 100%;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "fotoa" "fotob" "fotoc" "fotod" "fotoe" "fotof";
+    gap: 10px;
+  }
+  .galeria .foto-a {
+    grid-area: fotoa;
+  }
+  .galeria .foto-b {
+    grid-area: fotob;
+  }
+  .galeria .foto-c {
+    grid-area: fotoc;
+  }
+  .galeria .foto-d {
+    grid-area: fotod;
+  }
+  .galeria .foto-e {
+    grid-area: fotoe;
+  }
+  .galeria .foto-f {
+    grid-area: fotof;
+  }
+  iframe {
+    height: 25%;
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

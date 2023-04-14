@@ -58,11 +58,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 
     <header>
-    <img src="../img/header (1).svg" alt="">
+    <img src="../img/header.webp" alt="">
 
     </header>
 
-    <main class="tienda">
+    <main class="tienda contenedor">
+        <h1 class="text-center">PRODUCTOS</h1>
         <div class="actions">
             <form action="">
                 <input type="text" placeholder="Buscar">
@@ -79,32 +80,32 @@
         </div>
 <!-- ends second nav -->
         <div>
-            <section class="filters">
+            <section class="filters d-flex">
                 <form>
                     <select name="categorias">
                         <option value="mates">Mates</option>
                         <option value="kit matero">Kit matero</option>
                         <option value="bombillas">Bombillas</option>
                     </select>
-                    <span><b>mates</b></span>
+                    <span><b>Color</b></span>
                     <ul>
                         <li>
-                            <a href="#">Mate1 (8)</a>
+                            <a href="#">Blanco (8)</a>
                         </li>
                         <li>
-                            <a href="#">Mate2 (5)</a>
+                            <a href="#">Oliva (5)</a>
                         </li>
                         <li>
-                            <a href="#">Mate3 (15)</a>
+                            <a href="#">Negro (15)</a>
                         </li>
                     </ul>
                     <span><b>Tamaño</b></span>
                     <div>
-                        <label for="mediano">Mediano</label>
+                        <label for="mediano">M</label>
                         <input type="checkbox" id="mediano">
                     </div>
                     <div>
-                        <label for="grande">Grande</label>
+                        <label for="grande">XL</label>
                         <input type="checkbox" id="grande">
                     </div>
                 </form>
@@ -113,15 +114,13 @@
 
 <!-- ends filters -->
 <main class="container-fluid py-2">
-  <h1 class="text-center">PRODUCTOS</h1>
-  <div class="row">
+<div class="row">
 
     <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
         <div class="card">
-            <img src="../img/promo1.jpg" class="card-img-top w-100" alt="...">
+            <img src="../img/productos/Mate Arg Campeon azul.webp" class="card-img-top w-100" alt="...">
             <div class="card-body">
-              <h2 class="card-title">Producto 1</h2>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h2 class="card-title">Mate Argentina Campeon Azul</h2>
               <a href="#" class="btn btn-pink">+ Agregar al carrito</a>
             </div>
         </div>
@@ -129,10 +128,9 @@
     <!-- ends card 1 -->
     <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
         <div class="card">
-            <img src="../img/promo2.jpg" class="card-img-top w-100" alt="...">
+            <img src="../img/productos/Mate Moli map.webp" class="card-img-top w-100" alt="...">
             <div class="card-body">
-              <h2 class="card-title">Producto 2</h2>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h2 class="card-title">Mate Mundi</h2>
               <a href="#" class="btn btn-pink">+ Agregar al carrito</a>
             </div>
         </div>
@@ -140,10 +138,9 @@
     <!-- ends card 2 -->
     <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
         <div class="card">
-            <img src="../img/promo3.jpg" class="card-img-top w-100" alt="...">
+            <img src="../img/productos/Mate Moli XL Borgoña.webp" class="card-img-top w-100" alt="...">
             <div class="card-body">
-                <h2 class="card-title">Producto 3</h2>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h2 class="card-title">Mate Moli XL Borgoña</h2>
               <a href="#" class="btn btn-pink">+ Agregar al carrito</a>
             </div>
         </div>
@@ -151,10 +148,9 @@
     <!-- ends card 3 -->
     <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
         <div class="card">
-            <img src="../img/promo1.jpg" class="card-img-top w-100" alt="...">
+            <img src="../img/productos/Mate Moli XL blanco.webp" class="card-img-top w-100" alt="...">
             <div class="card-body">
-                <h2 class="card-title">Producto 4</h2>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h2 class="card-title">Mate Moli XL Blanco</h2>
               <a href="#" class="btn btn-pink">+ Agregar al carrito</a>
             </div>
         </div>
@@ -162,10 +158,9 @@
     <!-- ends card 4 -->
     <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
         <div class="card">
-            <img src="../img/promo2.jpg" class="card-img-top w-100" alt="...">
+            <img src="../img/productos/Mate Arg Campeon negro.webp" class="card-img-top w-100" alt="...">
             <div class="card-body">
-                <h2 class="card-title">Producto 5</h2>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h2 class="card-title">Mate Argentina Campeon Ng</h2>
               <a href="#" class="btn btn-pink">+ Agregar al carrito</a>
             </div>
         </div>
@@ -173,10 +168,9 @@
     <!-- ends card 5 -->
     <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
         <div class="card">
-            <img src="../img/promo3.jpg" class="card-img-top w-100" alt="...">
+            <img src="../img/productos/Mate Moli verde oliva.webp" class="card-img-top w-100" alt="...">
             <div class="card-body">
-                <h2 class="card-title">Producto 6</h2>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h2 class="card-title">Mate Moli Verde oliva</h2>
               <a href="#" class="btn btn-pink">+ Agregar al carrito</a>
             </div>
         </div>
@@ -184,10 +178,9 @@
     <!-- ends card 6 -->
     <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
         <div class="card">
-            <img src="../img/promo2.jpg" class="card-img-top w-100" alt="...">
+            <img src="../img/productos/Mate Moli personalizado.webp" class="card-img-top w-100" alt="...">
             <div class="card-body">
-                <h2 class="card-title">Producto 7</h2>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h2 class="card-title">Mate Moli Personalizado</h2>
               <a href="#" class="btn btn-pink">+ Agregar al carrito</a>
             </div>
         </div>
@@ -195,10 +188,9 @@
     <!-- ends card 7 -->
     <article class="col-sm-12 col-md-6 col-lg-3 mb-3">
         <div class="card">
-            <img src="../img/promo3.jpg" class="card-img-top w-100" alt="...">
+            <img src="../img/productos/Mate Moli XL caramel.webp" class="card-img-top w-100" alt="...">
             <div class="card-body">
-                <h2 class="card-title">Producto 8</h2>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h2 class="card-title">Mate Moli XL Caramel</h2>
               <a href="#" class="btn btn-pink">+ Agregar al carrito</a>
             </div>
         </div>
@@ -207,7 +199,7 @@
     
     <a href="#" class="linkMore">Ver mas>></a>
     
-  </div>
+</div>
 
 <!-- ends row -->
 

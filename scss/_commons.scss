@@ -23,17 +23,21 @@ h2{
 }
 
 h3{
-    font-size: 2.5rem;
+    font-size: $textMd
 }
 
 h4,h5{
-    font-size: 2rem;
+    font-size: $textSm;
 }
 
 
 p{
     @include textos (1.8rem, 2rem, $keyColor, center)
     
+}
+
+.card-body{
+    color: $mainColor;
 }
 
 label{
@@ -54,7 +58,7 @@ main img{
 }
 
 iframe{
-    height: 30%;
+    height: 40%;
 }
 
 

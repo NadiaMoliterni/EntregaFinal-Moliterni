@@ -1,29 +1,72 @@
 //responsive
-@media (max-width:768px){
+@media (width < 768px){
+// index
     .productos{
-        width: 100%;
-        padding: 0 30px;
-        display: grid;
-        justify-items: center;
+        overflow-x: hidden;
+        flex-direction: column;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        align-items: center;
-        grid-template-areas:
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
         "one"
-        "two"
+        "two" 
         "three";
-    }
+        gap: 10px;
     
-}
+       .one{
+         grid-area: one;
+        }
+    
+       .two{
+         grid-area: two;
+        }
+    
+        .three{
+         grid-area: three;
+        }
+    }
+// productos
+    .galeria{
+        width: 100%;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas:
+        "fotoa"
+        "fotob" 
+        "fotoc"
+        "fotod"
+        "fotoe"
+        "fotof";
+        gap: 10px;
+    
+        .foto-a{
+          grid-area: fotoa;
+        }
 
-.one{
-    grid-area: one;
-}
+        .foto-b{
+         grid-area: fotob;
+        }
 
-.two{
-    grid-area: two;
-}
+        .foto-c{
+         grid-area: fotoc;
+        }
 
-.three{
-    grid-area: three;
+        .foto-d{
+         grid-area: fotod;
+        }
+
+        .foto-e{
+         grid-area: fotoe;
+        }
+
+        .foto-f{
+         grid-area: fotof;
+        }
+    }
+
+    iframe{
+        height: 25%;
+        width: 25%;
+    }
+
 }
