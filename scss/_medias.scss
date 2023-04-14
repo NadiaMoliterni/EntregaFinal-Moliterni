@@ -1,4 +1,22 @@
 //responsive
+@media (min-width: 769px){
+    .productos{
+        padding: 0 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    
+        .productos figure{
+            width: 30%;
+            border-radius: 4px;
+            border: solid gray 1px;
+            margin-bottom: 20px;
+        }
+}
+
 @media (width < 768px){
 // index
     .productos{
