@@ -166,7 +166,7 @@ footer a {
   text-align: center;
 }
 .botonera ul li a:hover {
-  color: blue;
+  color: white;
   text-decoration: underline;
 }
 .botonera img {
@@ -207,6 +207,12 @@ footer a {
 }
 .productos figure img {
   width: 100%;
+}
+
+.scale:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+  cursor: pointer;
 }
 
 .filters {

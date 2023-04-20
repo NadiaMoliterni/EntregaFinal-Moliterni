@@ -35,6 +35,14 @@
     }
 }
 
+//animaciones
+.scale:hover{
+    transform: scale(1.2);
+    transition: all 1s;
+    cursor: pointer;
+    }
+
+
 //tienda de productos con grid
 .filters{
     padding-left: 20px;
