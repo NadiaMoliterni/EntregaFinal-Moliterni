@@ -76,7 +76,7 @@ main img {
 }
 
 iframe {
-  height: 40%;
+  height: 100%;
 }
 
 footer {
@@ -153,6 +153,13 @@ footer a {
 
 .d-block {
   display: block;
+}
+
+.contacto {
+  justify-content: center;
+  margin: 2%;
+  padding: 2%;
+  justify-content: space-around;
 }
 
 .botonera {
@@ -364,8 +371,30 @@ footer a {
     grid-area: fotof;
   }
   iframe {
-    height: 25%;
-    width: 25%;
+    height: 50%;
+    width: 100%;
+    justify-items: center;
+  }
+  .cont {
+    width: 100%;
+    align-content: center;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "uno" "dos" "tres" "cuatro";
+    gap: 10px;
+  }
+  .cont .uno {
+    grid-area: uno;
+  }
+  .cont .dos {
+    grid-area: dos;
+  }
+  .cont .tres {
+    grid-area: tres;
+  }
+  .cont .cuatro {
+    grid-area: cuatro;
   }
 }
 

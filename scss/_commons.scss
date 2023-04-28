@@ -58,7 +58,7 @@ main img{
 }
 
 iframe{
-    height: 40%;
+    height: 100%;
 }
 
 
@@ -136,4 +136,12 @@ footer{
 
 .d-block{
     display: block;
+}
+
+.contacto{
+    justify-content: center;
+    margin: 2%;
+    padding: 2%;
+    justify-content: space-around;
+
 }
